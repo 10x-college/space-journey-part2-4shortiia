@@ -145,6 +145,54 @@
           </table>
         </div>
       </section>
+
+      <!-- The Booking Interface -->
+      <section>
+        <div class="kiosk-interface">
+          <h2>SELF-SERVICE TERMINAL</h2>
+          <form action="#" method="POST">
+            <!-- Fieldset 1 (Identity) -->
+            <fieldset>
+              <legend><h2>IDENTITY VERIFICATION</h2></legend>
+
+              <label for="full-designation">Full Designation</label>
+              <input type="full-designation" id="full-designation" name="full-designation" placeholder="Enter Full Designation" />
+
+              <label for="id-code">ID Code</label>
+              <input type="id-code" id="id-code" name="id-code" placeholder="Enter ID Code" />
+            </fieldset>
+
+            <!-- Fieldset 2 (Flight Parameters) -->
+            <fieldset>
+              <legend>
+                <h2>FLIGHT PARAMETERS</h2>
+              </legend>
+            </fieldset>
+
+            <label for="destination">Destination</label>
+            <input type="text" name="destination" id="destination" list="planets" placeholder="Select Destination" />
+            <datalist id="planets">
+              <option value="Kepler-186f">Kepler-186f</option>
+              <option value="Titan Station">Titan Station</option>
+              <option value="Nebula Resort">Nebula Resor</option>
+              <option value="Event Horizon">Event Horizon</option>
+            </datalist>
+
+            <label for="cabin-class">Cabin Class</label>
+            <select name="cabin-class" id="cabin-class" required>
+              <option value="economy">Economy (Stasis Pod)</option>
+              <option value="business">Business (Quarters)</option>
+              <option value="first">First (Zero-G Suite)</option>
+            </select>
+
+            <!-- Submit -->
+            <button type="submit">AUTHORIZE CREDIT TRANSFER</button>
+          </form>
+        </div>
+      </section>
     </main>
+
+    <!-- Footer Section -->
+    <footer><p>TERMINAL X-OMEGA // OPERATED BY GALACTIC FEDERATION // SAFETY NOT GUARANTEED.</p></footer>
   </body>
 </html>
